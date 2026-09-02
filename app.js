@@ -1,16 +1,12 @@
 const express = require('express');
 const app = express();
-
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.status(200).send('Hello World from ECS!');
+  res.send('Hello World from AWS ECS Fargate!');
 });
 
-app.get('/health', (req, res) => {
-  res.status(200).send('OK');
-});
-
+// Binding to '0.0.0.0' is required for ECS containers to receive external traffic
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server listening on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

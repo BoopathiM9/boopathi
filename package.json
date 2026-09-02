@@ -1,7 +1,7 @@
 {
-  "name": "boopathi-express-app",
+  "name": "ecs-express-app",
   "version": "1.0.0",
-  "description": "Express app on AWS ECS Fargate",
+  "description": "Express app deployed to AWS ECS Fargate",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
