@@ -1,15 +1,12 @@
 {
-  "name": "boopathi",
+  "name": "boopathi-express-app",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "Express app on AWS ECS Fargate",
+  "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.19.2"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^6.3.4"
   }
 }
