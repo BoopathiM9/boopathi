@@ -1,13 +1,18 @@
 FROM node:18-alpine
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
+# Copy dependency declarations
 COPY package*.json ./
 
-RUN npm install
+# Install production dependencies
+RUN npm ci --only=production
 
+# Copy application source code
 COPY . .
 
+# Expose container port
 EXPOSE 3000
 
+# Start server
 CMD ["node", "app.js"]
