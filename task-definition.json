@@ -10,7 +10,7 @@
       "essential": true,
       "command": [
         "node",
-        "app.js"
+        "server.js"
       ],
       "portMappings": [
         {
