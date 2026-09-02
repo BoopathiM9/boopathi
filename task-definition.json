@@ -1,9 +1,12 @@
 {
   "family": "boopathi-task",
   "networkMode": "awsvpc",
-  "requiresCompatibilities": ["FARGATE"],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
   "cpu": "256",
   "memory": "512",
+  "executionRoleArn": "arn:aws:iam::384875139605:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "boopathi-container",
