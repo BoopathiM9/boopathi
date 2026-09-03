@@ -1,10 +1,9 @@
 FROM node:18-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package*.json ./
-
-RUN npm ci --only=production || npm install
+RUN npm install --production
 
 COPY . .
 
