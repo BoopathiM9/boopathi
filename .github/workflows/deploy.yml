@@ -8,8 +8,8 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: boopathi
-  ECS_SERVICE: cloud-kinetics-service
-  ECS_CLUSTER: cloud-kinetics-cluster
+  ECS_SERVICE: boopathi-service
+  ECS_CLUSTER: boopathi-cluster
   ECS_TASK_DEFINITION: task-definition.json
   CONTAINER_NAME: boopathi-container
 
